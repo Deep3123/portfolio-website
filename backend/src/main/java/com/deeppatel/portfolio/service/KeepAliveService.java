@@ -12,7 +12,7 @@ public class KeepAliveService {
     private final String RENDER_URL = "https://portfolio-backend-he68.onrender.com/api/analytics/ping";
     private final RestTemplate restTemplate = new RestTemplate();
 
-    @Scheduled(fixedRate = 600000) // 10 minutes in milliseconds
+    @Scheduled(fixedRate = 840000) // 14 minutes in milliseconds
     public void pingServer() {
         try {
             log.info("Pinging server to keep it alive...");
