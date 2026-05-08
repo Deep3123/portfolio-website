@@ -1,0 +1,25 @@
+<div class="min-h-screen bg-dark-bg text-gray-100 flex flex-col relative overflow-hidden">
+  <!-- Dynamic animated background blobs (Optimized for Performance) -->
+  <div class="fixed inset-0 z-0 pointer-events-none">
+    <div class="absolute top-0 left-1/4 w-[600px] h-[600px] bg-[radial-gradient(circle,_rgba(37,99,235,0.1)_0%,_transparent_70%)] opacity-70"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-[600px] h-[600px] bg-[radial-gradient(circle,_rgba(147,51,234,0.1)_0%,_transparent_70%)] opacity-70"></div>
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-[radial-gradient(circle,_rgba(30,58,138,0.05)_0%,_transparent_70%)] opacity-50"></div>
+  </div>
+
+  <app-navbar class="z-50 relative"></app-navbar>
+
+  <main class="z-10 relative flex-grow pt-24 px-6 sm:px-12 lg:px-24 max-w-[1400px] mx-auto w-full flex flex-col gap-32">
+    <app-hero id="home"></app-hero>
+    <app-about id="about"></app-about>
+    <app-skills id="skills"></app-skills>
+    <app-experience id="experience"></app-experience>
+    <app-projects id="projects"></app-projects>
+    <app-achievements id="achievements"></app-achievements>
+    <app-education id="education"></app-education>
+    <app-contact id="contact"></app-contact>
+  </main>
+
+  <footer class="z-10 relative py-8 text-center text-gray-500 border-t border-dark-border mt-32 text-sm font-mono">
+    <p>© {{ getCurrentYear() }} Deep Patel. Built with Angular & Spring Boot.</p>
+  </footer>
+</div>
