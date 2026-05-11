@@ -1,13 +1,14 @@
 <div class="min-h-screen bg-dark-bg text-gray-100 flex flex-col relative overflow-hidden">
-  <!-- Dynamic animated background blobs (Viewport-relative for all screen sizes) -->
+  <!-- OLD: Multiple corner blobs (commented out)
   <div class="fixed inset-0 z-0 pointer-events-none overflow-hidden">
-    <!-- Top-left blue glow -->
     <div class="absolute -top-[15vh] -left-[10vw] w-[80vw] h-[80vw] max-w-[900px] max-h-[900px] min-w-[300px] min-h-[300px] bg-[radial-gradient(circle,_rgba(37,99,235,0.1)_0%,_transparent_70%)] opacity-70"></div>
-    <!-- Bottom-right purple glow -->
     <div class="absolute -bottom-[10vh] -right-[10vw] w-[70vw] h-[70vw] max-w-[800px] max-h-[800px] min-w-[250px] min-h-[250px] bg-[radial-gradient(circle,_rgba(147,51,234,0.1)_0%,_transparent_70%)] opacity-70"></div>
-    <!-- Center ambient glow -->
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90vw] h-[90vh] max-w-[1200px] max-h-[1200px] min-w-[300px] min-h-[300px] bg-[radial-gradient(circle,_rgba(30,58,138,0.05)_0%,_transparent_70%)] opacity-50"></div>
   </div>
+  -->
+
+  <!-- Single centralized ambient glow — always perfectly centered on any screen -->
+  <div class="fixed inset-0 z-0 pointer-events-none bg-[radial-gradient(ellipse_at_center,_rgba(59,130,246,0.12)_0%,_rgba(147,51,234,0.06)_35%,_transparent_70%)]"></div>
 
   <app-navbar class="z-50 relative"></app-navbar>
 
